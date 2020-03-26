@@ -19,4 +19,7 @@ ipl_auction.Win_Margin.value_counts(normalize=True)*100
 pd.crosstab(ipl_auction['Team1'], ipl_auction["Toss_Winner"])
 pd.crosstab(ipl_auction['Team1'], ipl_auction["match_winner"])
 ipl_auction[['Team1','Team2', 'match_winner']].sort_values('match_winner")
+ipl_auction[['Team1', 'Team2']].sort_values('Team1', ascending = False)[0:5]
+ipl_auction["primium"] = ipl_auction['Team1'] - ipl_auction['Team2']
 
+ipl_auction['math_winner', 'primium'] [:5]
